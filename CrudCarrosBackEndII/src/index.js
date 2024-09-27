@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from 'uuid'
 const app = express()
 app.use(express.json())
 
-const port = 8080
+const port = process.env.PORT || 8080  // Use process.env.PORT para produção
 
 let veiculos = []
 let usuarios = []
@@ -55,7 +55,7 @@ app.get('/veiculos/marca/:marca', (req, res) => {
     }
 
     const listaFiltrada = veiculosFiltrados.map(veiculo => 
-        `ID: 1 | Modelo: ${veiculo.modelo} | Cor: ${veiculo.cor} | Preço: R$${veiculo.preco.toFixed(2)}`
+        `ID: ${veiculo.id} | Modelo: ${veiculo.modelo} | Cor: ${veiculo.cor} | Preço: R$${veiculo.preco.toFixed(2)}`
     ).join('\n')
 
     res.status(200).send(listaFiltrada)
