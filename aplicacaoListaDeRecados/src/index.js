@@ -182,6 +182,8 @@ app.delete('/message/:id', (req, res) => {
     return res.status(200).json({ message: 'Mensagem apagada com sucesso' })
 })
 
-app.listen(8080, () => {
-    console.log('Servidor rodando na porta 8080')
+const port = process.env.PORT || 8080
+
+app.listen(port, () => {
+    console.log(`Servidor rodando na porta ${port}`)
 })
