@@ -1,7 +1,7 @@
 import express from "express";
 import bcrypt from "bcrypt";
 import { v4 as uuidv4 } from "uuid";
-import { validateEmail } from "./validation.js";
+import { validateEmail } from "../middleware/validation.js";
 
 export const usersRouter = express.Router();
 
