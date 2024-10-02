@@ -4,8 +4,7 @@ import { v4 as uuidv4 } from "uuid";
 import { validateEmail } from "../middleware/validation.js";
 
 export const usersRouter = express.Router();
-
-let users = [];
+export let users = [];
 
 const isEmailRegistered = (email) => users.some((user) => user.email === email);
 
