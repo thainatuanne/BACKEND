@@ -126,4 +126,3 @@ A seguir estão as rotas disponíveis na API de lista de recados, com explicaç�
 1. Clone o repositório e navegue até o diretório do projeto.
 2. Instale as dependências utilizando `npm install`.
 3. Execute o servidor com `npm run dev` para o ambiente de desenvolvimento.
-4. Acesse a API através da URL configurada no arquivo `.env`.
