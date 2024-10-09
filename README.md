@@ -33,8 +33,6 @@ Este repositório contém a pasta **aplicacaoListaDeRecados**, uma API construí
 
 ## Como Usar as Rotas
 
-A seguir estão as rotas disponíveis na API de lista de recados, com explicações sobre como utilizá-las:
-
 #### Cadastro de Usuário (Sign Up)
 
 - **Método:** `POST`
